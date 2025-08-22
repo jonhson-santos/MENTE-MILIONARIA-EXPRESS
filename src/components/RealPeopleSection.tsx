@@ -16,41 +16,9 @@ export const RealPeopleSection: React.FC<RealPeopleSectionProps> = ({ onCtaClick
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const carouselImages = [
-    "/Anotação 2025-08-21 230202.png",
-    "/Anotação 2025-08-21 230218.png"
-  ];
-
-  const people = [
-    {
-      name: "Carlos Mendes",
-      age: 28,
-      profession: "Designer",
-      location: "São Paulo, SP",
-      result: "Primeiro mês: +R$ 3.200",
-      story: "Estava travado há 2 anos no mesmo emprego. Em 5 dias já estava executando planos que ficaram meses parados. Hoje tenho minha própria agência.",
-      icon: DollarSign,
-      color: "text-green-500"
-    },
-    {
-      name: "Marina Silva",
-      age: 31,
-      profession: "Empreendedora",
-      location: "Rio de Janeiro, RJ",
-      result: "Dobrou a produtividade",
-      story: "Me autossabotava constantemente. O método me deu clareza total. Parei de procrastinar e finalmente consegui focar no que realmente importa.",
-      icon: TrendingUp,
-      color: "text-blue-500"
-    },
-    {
-      name: "Rafael Lima",
-      age: 25,
-      profession: "Programador",
-      location: "Belo Horizonte, MG",
-      result: "Mudança em 7 dias",
-      story: "Cansado de motivação vazia. Este método é direto e funciona. Sem enrolação, só técnicas que realmente transformam sua mentalidade.",
-      icon: Target,
-      color: "text-purple-500"
-    }
+    "https://i.imgur.com/Tk0h0UW.png",
+    "https://i.imgur.com/ZgKIGca.png",
+    "https://i.imgur.com/WPJYR24.png"
   ];
 
   useEffect(() => {
@@ -161,53 +129,6 @@ export const RealPeopleSection: React.FC<RealPeopleSectionProps> = ({ onCtaClick
             </div>
           </div>
         </motion.div>
-
-        {/* People testimonials - Mobile optimized grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-8 md:mb-12 px-2">
-          {people.map((person, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-gradient-to-br from-black/80 to-gray-900/80 backdrop-blur-sm border border-[#E7C75F]/30 rounded-xl p-4 md:p-8 hover:border-[#E7C75F]/60 transition-all duration-300 hover:transform hover:scale-105"
-            >
-              <div className="mb-4 md:mb-6">
-                <h3 className="text-lg md:text-xl font-bold text-white mb-1">{person.name}</h3>
-                <p className="text-[#E7C75F] font-semibold text-sm md:text-base">{person.profession}</p>
-                <p className="text-white/60 text-xs md:text-sm">{person.age} anos • {person.location}</p>
-                
-                <div className="flex items-center space-x-1 mt-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 md:w-4 md:h-4 text-[#E7C75F] fill-current" />
-                  ))}
-                </div>
-              </div>
-
-              <div className={`bg-gradient-to-r from-green-500/20 to-transparent border border-green-500/30 rounded-lg p-3 md:p-4 mb-3 md:mb-4`}>
-                <div className="flex items-center space-x-2">
-                  <person.icon className={`w-4 h-4 md:w-5 md:h-5 ${person.color}`} />
-                  <span className={`font-bold text-sm md:text-base ${person.color}`}>
-                    ✓ {person.result}
-                  </span>
-                </div>
-              </div>
-
-              <blockquote className="text-white/90 italic leading-relaxed text-sm md:text-base">
-                "{person.story}"
-              </blockquote>
-
-              {/* Verification badge - Mobile optimized */}
-              <div className="flex items-center justify-between mt-4 md:mt-6 pt-3 md:pt-4 border-t border-white/10">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 md:w-3 md:h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-green-400 text-xs md:text-sm font-semibold">Depoimento verificado</span>
-                </div>
-                <span className="text-white/40 text-xs">Há 2 dias</span>
-              </div>
-            </motion.div>
-          ))}
-        </div>
 
         {/* Social proof numbers - Mobile optimized */}
         <motion.div
