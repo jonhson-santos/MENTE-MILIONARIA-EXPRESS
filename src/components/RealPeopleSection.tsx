@@ -16,9 +16,13 @@ export const RealPeopleSection: React.FC<RealPeopleSectionProps> = ({ onCtaClick
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const carouselImages = [
-    "https://i.imgur.com/Tk0h0UW.png",
-    "https://i.imgur.com/ZgKIGca.png",
-    "https://i.imgur.com/WPJYR24.png"
+    "https://i.imgur.com/zJa54D9.png",
+    "https://i.imgur.com/AwKsqIe.png",
+    "https://i.imgur.com/vqixXTb.png",
+    "https://i.imgur.com/sSSRNk2.png",
+    "https://i.imgur.com/29W2dWN.jpeg",
+    "https://i.imgur.com/AKGwpB2.jpeg",
+    "https://i.imgur.com/0nt5B5u.jpeg"
   ];
 
   useEffect(() => {
@@ -130,34 +134,11 @@ export const RealPeopleSection: React.FC<RealPeopleSectionProps> = ({ onCtaClick
           </div>
         </motion.div>
 
-        {/* Social proof numbers - Mobile optimized */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="bg-gradient-to-r from-[#E7C75F]/10 to-green-500/10 border border-[#E7C75F]/30 rounded-xl p-4 md:p-8 text-center mb-8 md:mb-12 mx-2"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-            <div>
-              <div className="text-3xl md:text-4xl font-black text-[#E7C75F] mb-1 md:mb-2 font-['Anton']">2.847+</div>
-              <p className="text-white/80 text-sm md:text-base">Pessoas transformadas</p>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-black text-green-400 mb-1 md:mb-2 font-['Anton']">97%</div>
-              <p className="text-white/80 text-sm md:text-base">Taxa de satisfação</p>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-black text-blue-400 mb-1 md:mb-2 font-['Anton']">7</div>
-              <p className="text-white/80 text-sm md:text-base">Dias para ver resultados</p>
-            </div>
-          </div>
-        </motion.div>
-
         {/* CTA - Mobile optimized */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
           className="text-center px-4"
         >
           <p className="text-white/80 text-base md:text-lg mb-4 md:mb-6">
