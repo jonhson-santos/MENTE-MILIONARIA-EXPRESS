@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Brain, Target, Zap, TrendingUp, ArrowRight, Lock, Unlock, Lightbulb } from 'lucide-react';
+import { Brain, Target, Zap, TrendingUp, ArrowRight, Lock, Unlock, Lightbulb, DollarSign } from 'lucide-react';
 
 interface EnhancedMechanismSectionProps {
   onCtaClick: () => void;
@@ -36,25 +36,25 @@ export const EnhancedMechanismSection: React.FC<EnhancedMechanismSectionProps> =
 
   const steps = [
     {
-      icon: Brain,
-      title: "IDENTIFICAÇÃO",
-      subtitle: "Mapeamos seus bloqueios",
-      description: "Descobrimos exatamente o que está travando sua mente e impedindo seus resultados",
-      image: "https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+      icon: DollarSign,
+      title: "SUA GRANA",
+      subtitle: "Desbloqueie seu potencial financeiro",
+      description: "Veja como quebrar as barreiras mentais que impedem você de ganhar mais dinheiro",
+      video: "https://i.imgur.com/ZyurRR1.mp4"
     },
     {
-      icon: Target,
-      title: "REPROGRAMAÇÃO",
-      subtitle: "Quebramos as barreiras",
-      description: "Técnicas específicas para eliminar crenças limitantes e instalar novos padrões mentais",
-      image: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+      icon: Unlock,
+      title: "SUA LIBERDADE",
+      subtitle: "Liberte-se das limitações",
+      description: "Conquiste a liberdade mental e emocional para viver a vida que você sempre quis",
+      video: "https://i.imgur.com/6ifnXSF.mp4"
     },
     {
-      icon: Zap,
-      title: "ATIVAÇÃO",
-      subtitle: "Liberamos seu potencial",
-      description: "Você executa com clareza total e foco laser nos resultados que realmente importam",
-      image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+      icon: TrendingUp,
+      title: "SEU SUCESSO",
+      subtitle: "Alcance seus objetivos",
+      description: "Transforme sua mentalidade e execute com foco total para conquistar o sucesso que merece",
+      video: "https://i.imgur.com/oC9cq5h.mp4"
     }
   ];
 
@@ -208,13 +208,16 @@ export const EnhancedMechanismSection: React.FC<EnhancedMechanismSectionProps> =
                 className="text-center group"
               >
                 <div className="bg-black/80 backdrop-blur-sm border border-[#E7C75F]/30 rounded-xl overflow-hidden hover:border-[#E7C75F]/60 transition-all duration-300 mb-4 group-hover:transform group-hover:scale-105">
-                  {/* Image */}
+                  {/* Video */}
                   <div className="relative h-32 md:h-48 overflow-hidden">
-                    <img
-                      src={step.image}
+                    <video
+                      src={step.video}
                       alt={step.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      loading="lazy"
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
                     

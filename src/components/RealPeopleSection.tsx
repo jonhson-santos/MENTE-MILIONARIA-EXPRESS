@@ -16,9 +16,8 @@ export const RealPeopleSection: React.FC<RealPeopleSectionProps> = ({ onCtaClick
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const carouselImages = [
-    "https://i.imgur.com/Uz9nFIl.png",
-    "https://i.imgur.com/BjchGoh.png",
-    "https://i.imgur.com/tcdr2OR.png"
+    "/Anotação 2025-08-21 230202.png",
+    "/Anotação 2025-08-21 230218.png"
   ];
 
   const people = [
@@ -51,16 +50,6 @@ export const RealPeopleSection: React.FC<RealPeopleSectionProps> = ({ onCtaClick
       story: "Cansado de motivação vazia. Este método é direto e funciona. Sem enrolação, só técnicas que realmente transformam sua mentalidade.",
       icon: Target,
       color: "text-purple-500"
-    },
-    {
-      name: "Ana Paula",
-      age: 29,
-      profession: "Consultora",
-      location: "Brasília, DF",
-      result: "Nova carreira em 30 dias",
-      story: "Estava travada há anos na mesma função. O método me deu coragem para sair da zona de conforto. Hoje sou consultora independente.",
-      icon: Star,
-      color: "text-yellow-500"
     }
   ];
 

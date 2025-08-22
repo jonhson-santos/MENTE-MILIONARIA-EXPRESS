@@ -17,7 +17,7 @@ export const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({ onCt
       text: "Em 5 dias já estava executando planos que ficaram meses parados. Minha mente desbloqueou de verdade.",
       result: "Primeiro mês: R$ 3.200 extras",
       avatar: "C",
-      salesImage: "https://i.imgur.com/Uz9nFIl.png"
+      salesImage: "/WhatsApp Image 2025-08-22 at 02.41.55.jpeg"
     },
     {
       name: "Marina S.",
@@ -26,7 +26,7 @@ export const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({ onCt
       text: "Parei de me autossabotar. Finalmente consegui focar no que realmente importa e os resultados apareceram.",
       result: "Dobrou a produtividade",
       avatar: "M",
-      salesImage: "https://i.imgur.com/BjchGoh.png"
+      salesImage: "/WhatsApp Image 2025-08-22 at 02.41.55 (1).jpeg"
     },
     {
       name: "Rafael L.",
@@ -35,16 +35,7 @@ export const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({ onCt
       text: "O método é direto e funciona. Sem enrolação, só técnicas que realmente transformam sua mentalidade.",
       result: "Mudança em 7 dias",
       avatar: "R",
-      salesImage: "https://i.imgur.com/tcdr2OR.png"
-    },
-    {
-      name: "Ana P.",
-      age: 29,
-      location: "Brasília",
-      text: "Estava travada há anos. Este método me deu a clareza que eu precisava para sair da zona de conforto.",
-      result: "Nova carreira em 30 dias",
-      avatar: "A",
-      salesImage: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+      salesImage: "/WhatsApp Image 2025-08-22 at 02.41.55 (2).jpeg"
     }
   ];
 
